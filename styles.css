@@ -134,6 +134,38 @@ nav ul li a:hover::after {
     transform: scale(1.1);
 }
 
+/* moblie menu */
+/* MOBILE NAVBAR */
+@media (max-width: 768px) {
+
+    .navbar-container {
+        padding: 15px 20px;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+
+        /* hidden by default */
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
 /* Hero */
 .hero {
     background: linear-gradient(135deg, var(--primary-bg), var(--accent));
